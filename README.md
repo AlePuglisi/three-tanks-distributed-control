@@ -40,6 +40,18 @@ For a detailed task description, refer to the general [Project work assignment](
 > To run the code, you need [YALMIP](https://yalmip.github.io/) toolbox installed, and a low-level Linear Programming solver like [sedumi](https://github.com/sqlp/sedumi) or [SDTP3](https://github.com/sqlp/sdpt3).<br/>
 > If you have some problem installing it, you can refer to this [presentation](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/YALMIP_HowtoInstall.pdf) provided by my professor. 
 
+MATLAB scripts and functions are organized as follows: 
+- **Functions**:<br/>
+  Used in the main project scripts for pole analysis and gain tuning 
+    - ``di_fixed_modes.m``:
+    - ``LMI_CT_DeDicont.m`` and ``LMI_DT_DeDicont.m``:
+    - ``LMI_CT_H2.m`` and ``LMI_DT_H2.m``:
+    - ``LMI_CT_opt1.m`` and ``LMI_DT_opt1.m``:
+- **Scripts**:<br/>
+  Even if it seems long and complex, don't panic! Most of it is related to plot signals and zero/poles analysis. 
+   - ``PROJECT.m``:
+   - ``PROJECT_H2.m``:
+   - ``PROJECT_EXT.m``:
 
 ## Conclusion and Comments
 
