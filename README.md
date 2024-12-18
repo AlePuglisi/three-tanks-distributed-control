@@ -10,8 +10,8 @@ In this project, we solve a benchmark problem in control theory, the (linearized
 In particular, coherently with the course topics, we implement different control schemes (centralized, decentralized, distributed).<br/>
 Simulation and performance analysis are done both in continuous-time and discrete-time domain.<br/>
 
-<image width=420 height=300 src=https://github.com/user-attachments/assets/ed309489-9679-4e45-af91-1218c316ddf7>
-<image width=440 height=300 src=https://github.com/user-attachments/assets/4a309df1-49a2-4c43-bc94-6c02ca16e1cc>
+<image width=390 height=280 src=https://github.com/user-attachments/assets/ed309489-9679-4e45-af91-1218c316ddf7>
+<image width=420 height=280 src=https://github.com/user-attachments/assets/4a309df1-49a2-4c43-bc94-6c02ca16e1cc>
   
 <br/>
 <br/>
@@ -27,6 +27,10 @@ To have further details on the modeling, system decomposition, and control tunin
 
 
 ## MATLAB Code 
+
+> [!IMPORTANT]
+> To run the code, you need [YALMIP](https://yalmip.github.io/) toolbox installed, and a low-level Linear Programming solver like [sedumi](https://github.com/sqlp/sedumi) or [SDTP3](https://github.com/sqlp/sdpt3).<br/>
+> If you have some problem installing it, you can refer to this [presentation](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/YALMIP_HowtoInstall.pdf) provided by my professor. 
 
 ## Comments
 
