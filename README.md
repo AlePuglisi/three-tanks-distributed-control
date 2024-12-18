@@ -42,16 +42,28 @@ For a detailed task description, refer to the general [Project work assignment](
 
 MATLAB scripts and functions are organized as follows: 
 - **Functions**:<br/>
-  Used in the main project scripts for pole analysis and gain tuning 
-    - ``di_fixed_modes.m``:
-    - ``LMI_CT_DeDicont.m`` and ``LMI_DT_DeDicont.m``:
-    - ``LMI_CT_H2.m`` and ``LMI_DT_H2.m``:
-    - ``LMI_CT_opt1.m`` and ``LMI_DT_opt1.m``:
+  Used in the main project scripts for fixed mode analysis and control gain tuning.<br/>
+  For details, look at the function description, notice that the control structure is specified as an input  
+    - ``di_fixed_modes.m``: compute system fixed mode<br/>
+    
+  The functions below are based on LMI resolution with YALMIP:
+    - ``LMI_CT_DeDicont.m`` and ``LMI_DT_DeDicont.m``: Continuous (CT) and Discrete(DT) pole-placement control tuning
+    - ``LMI_CT_H2.m`` and ``LMI_DT_H2.m``: Continuos (CT) and Discrete(DT) H2 optimal control tuning 
+    - ``LMI_CT_opt1.m`` and ``LMI_DT_opt1.m``: Continuos (CT) and Discrete(DT) pole-placement plus control action rate limitation tuning.<br/>
+        (This is the LMI I'm proud of, being my own creation, look at this part of the [presentation](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/Control_rate_limitation.pdf)) 
+      
 - **Scripts**:<br/>
-  Even if it seems long and complex, don't panic! Most of it is related to plot signals and zero/poles analysis. 
-   - ``PROJECT.m``:
-   - ``PROJECT_H2.m``:
-   - ``PROJECT_EXT.m``:
+  Even if it seems long and complex, don't panic! Most of it is related to plot signals and zero/poles analysis.<br/>
+  In all the scripts below, we start with the system modeling, decomposition, control structure definition, and fixed mode computation.<br/>
+  Then, an open-loop analysis and closed-loop control for different control structures.<br/>
+  Each script differs by the controller gain tuning technique, based on the previously explained functions.  
+   - ``PROJECT.m``: Tuning based on pole-placement 
+   - ``PROJECT_H2.m``: Tuning based on H2
+   - ``PROJECT_EXT.m``: Tuning based on the "extended system" technique, by pole-placement plus control action rate limitation.  
+
+
+To run the code, open the PROJECT script in Matlab and run it. <br/>
+Many images will be opened with the simulation results. 
 
 ## Conclusion and Comments
 
