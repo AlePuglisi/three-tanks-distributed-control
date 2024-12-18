@@ -21,10 +21,18 @@ Controller tuning relies on Linear Matrix Inequality (LMI) theory (simple but ef
 <br/>
 <br/>
 
-To have further details on the modeling, system decomposition, and control tuning, refer to our [presentation](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/Presentation_project.pdf)
+If you want more details on the modeling, system decomposition, and control tuning, refer to our [presentation](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/Presentation_project.pdf)
 
 ## Objective
 
+Given the continuous time state-space description of the system:
+- Decompose the model
+- Perform open-loop stability analysis
+- Define different state-feedback control structures (centralized, decentralized, distributed)
+- Analyze each structure and compute the control gains to achieve satisfactory closed-loop performances.
+- Plot the simulation results and compare the performance of the control structures. 
+
+For a detailed task description, refer to the general [Project work assignment](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/general_project.pdf) and our [Three tanks assignment](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/Three_tanks_project.pdf)
 
 ## MATLAB Code 
 
@@ -32,5 +40,6 @@ To have further details on the modeling, system decomposition, and control tunin
 > To run the code, you need [YALMIP](https://yalmip.github.io/) toolbox installed, and a low-level Linear Programming solver like [sedumi](https://github.com/sqlp/sedumi) or [SDTP3](https://github.com/sqlp/sdpt3).<br/>
 > If you have some problem installing it, you can refer to this [presentation](https://github.com/AlePuglisi/three-tanks-distributed-control/blob/main/Report/YALMIP_HowtoInstall.pdf) provided by my professor. 
 
-## Comments
+
+## Conclusion and Comments
 
