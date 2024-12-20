@@ -3,19 +3,18 @@ MATLAB | YALMIP | Centralized,Decentralized,Distributed Control | Linear Matrix 
 
 This repository contains the MATLAB code and Report of the final group project of a course on [Networked Control systems](https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=810213&__pj0=0&__pj1=7f724b397a9ae97bd6cf089503f5774c).
 
-..WIP..
 
 ## Introduction 
 In this project, we solve a benchmark problem in control theory, the (linearized) modeling and control of a system of three tanks in series.<br/>
 In particular, coherently with the course topics, we implement different control schemes (centralized, decentralized, distributed).<br/>
-Simulation and performance analysis are done both in continuous-time and discrete-time domain.<br/>
+Simulation and performance analysis are done both in continuous-time and discrete-time domains.<br/>
 
 <image width=390 height=280 src=https://github.com/user-attachments/assets/ed309489-9679-4e45-af91-1218c316ddf7>
 <image width=420 height=280 src=https://github.com/user-attachments/assets/4a309df1-49a2-4c43-bc94-6c02ca16e1cc>
   
 <br/>
 <br/>
-The project is implemented in MATLAB, and YALMIP (with sedumi or SDTP3 for low-level optimization) as the optimization toolbox for LMI.<br/>
+The project is implemented in **MATLAB**, and **YALMIP** (with sedumi or SDTP3 for low-level optimization) as the optimization toolbox for LMI.<br/>
 Controller tuning relies on Linear Matrix Inequality (LMI) theory (simple but efficient). 
 
 <br/>
@@ -43,7 +42,7 @@ For a detailed task description, refer to the general [Project work assignment](
 MATLAB scripts and functions are organized as follows: 
 - **Functions**:<br/>
   Used in the main project scripts for fixed mode analysis and control gain tuning.<br/>
-  For details, look at the function description, notice that the control structure is specified as an input  
+  For details, look at the function description (the control structure is specified as input)
     - ``di_fixed_modes.m``: compute system fixed mode<br/>
     
   The functions below are based on LMI resolution with YALMIP:
@@ -66,4 +65,9 @@ To run the code, open the PROJECT script in Matlab and run it. <br/>
 Many images will be opened with the simulation results. 
 
 ## Conclusion and Comments
+
+This MATLAB code and the project report can be helpful for Automation and Control Students. <br/>
+Providing a simple way to define and solve LMIs, and a powerful tool to tune controllers for even bigger MIMO (Multi Input Multi Output) systems.<br/>
+
+Experiment with it, and feel free to open an issue, reach out to me for any questions!
 
