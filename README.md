@@ -14,6 +14,7 @@ Simulation and performance analysis are done both in continuous-time and discret
   
 <br/>
 <br/>
+
 The project is implemented in **MATLAB**, and **YALMIP** (with sedumi or SDTP3 for low-level optimization) as the optimization toolbox for LMI.<br/>
 Controller tuning relies on Linear Matrix Inequality (LMI) theory (simple but efficient). 
 
